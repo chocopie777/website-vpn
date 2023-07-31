@@ -1,5 +1,24 @@
 @import "../css/normalize";
 @import "../css/reset";
 @import "../scss/fonts";
-
+.logo__text-first {
+  font-family: Rubik-Medium;
+  color: #0B132A;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  display: inline;
+}
+.logo__text-second {
+  display: inline;
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.logo {
+  display: flex;
+}
 @import "../scss/media_queries";
