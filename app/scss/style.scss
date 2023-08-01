@@ -1,6 +1,13 @@
 @import "../css/normalize";
 @import "../css/reset";
 @import "../scss/fonts";
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .logo__text-first {
   font-family: Rubik-Medium;
   color: #0B132A;
@@ -9,16 +16,225 @@
   line-height: normal;
   display: inline;
 }
+
 .logo__text-second {
   display: inline;
   color: #0B132A;
-  font-family: Rubik;
+  font-family: Rubik-Bold;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
+
 .logo {
   display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo__text {
+  margin-left: 10px;
+}
+
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item + .nav__item {
+  margin-left: 40px;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: #4F5665;
+  font-family: Rubik-Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.auth__sign-in {
+  text-decoration: none;
+  color: #0B132A;
+  font-family: Rubik-Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.auth__sign-up {
+  text-decoration: none;
+  color: #F53855;
+  font-family: Rubik-Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 30px;
+  padding: 13px 45px;
+  border-radius: 50px;
+  border: 1px solid #F53855;
+}
+
+.header {
+  margin-top: 45px;
+  margin-bottom: 88px;
+}
+.get-started {
+  margin-bottom: 100px;
+}
+
+.get-started__title {
+  color: #0B132A;
+  font-family: Rubik-Medium;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 70px;
+
+  span {
+    font-weight: 700;
+    font-family: Rubik-Bold;
+  }
+}
+
+.get-started__text {
+  color: #4F5665;
+  font-family: Rubik-Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+
+  span {
+    font-family: Rubik-Medium;
+    font-weight: 500;
+  }
+}
+
+.get-started__btn {
+  text-decoration: none;
+  color: #FFF;
+  font-family: Rubik-Bold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 17px 77px;
+  border-radius: 10px;
+  background: #F53838;
+  display: inline-block;
+  position: relative;
+  &::before {
+    pointer-events: none;
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: '';
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    top: 25px;
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    background: rgba(245, 56, 56, 0.35);
+    filter: blur(27px);
+  }
+}
+.get-started__title {
+  padding-top: 28px;
+  margin-bottom: 20px;
+}
+.get-started__text {
+  margin-bottom: 50px;
+}
+.get-started__left {
+  width: 50%;
+}
+.get-started__inner {
+  display: flex;
+  margin-bottom: 128px;
+}
+.get-started__img {
+  position: absolute;
+  left: 20px;
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+.get-started__right {
+  position: relative;
+}
+.get-started-statistics__inner {
+  padding: 37px 90px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 10px;
+  background: #FFF;
+  position: relative;
+  &::before {
+    z-index: -1;
+    position: absolute;
+    content: '';
+    top: 50px;
+    width: 90%;
+    height: 100%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    opacity: 0.05999999865889549;
+    background: #0D1025;
+    filter: blur(57px);
+  }
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 70px;
+  background: #FFECEC;
+}
+.get-started-statistics__text {
+  color: #4F5665;
+  font-family: Rubik-Regular;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  span {
+    color: #0B132A;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: Rubik-Bold;
+  }
+}
+.get-started-statistics__block1, .get-started-statistics__block2, .get-started-statistics__block3 {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+.get-started-statistics__text {
+  margin-left: 36px;
+}
+.decor {
+  border-left: 2px solid #EEEFF2;
 }
 @import "../scss/media_queries";

@@ -9,22 +9,23 @@
 </head>
 
 <body>
-    <header>
+<header class="header">
+    <div class="container">
         <div class="header_inner">
-            <div class="logo">
+            <a class="logo" href="#">
                 <img class="logo__img" src="./images/Logo.svg" alt="">
                 <p class="logo__text">
-                    <p class="logo__text-first">Lasles</p>
-                    <p class="logo__text-second">VPN</p>
+                <p class="logo__text-first">Lasles</p>
+                <p class="logo__text-second">VPN</p>
                 </p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Help</a></li>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#">About</a></li>
+                    <li class="nav__item"><a href="#">Features</a></li>
+                    <li class="nav__item"><a href="#">Pricing</a></li>
+                    <li class="nav__item"><a href="#">Testimonials</a></li>
+                    <li class="nav__item"><a href="#">Help</a></li>
                 </ul>
             </nav>
             <div class="auth">
@@ -32,8 +33,68 @@
                 <a class="auth__sign-up" href="">Sign Up</a>
             </div>
         </div>
-    </header>
-    <script src="js/main.min.js"></script>
+    </div>
+</header>
+<section class="get-started">
+    <div class="container">
+        <div class="get-started__inner">
+            <div class="get-started__left">
+                <h1 class="get-started__title">
+                    Want anything to be easy with <span>LaslesVPN.</span>
+                </h1>
+                <p class="get-started__text">Provide a network for all your needs with ease and fun using <span>LaslesVPN</span>
+                    discover interesting features from us.</p>
+                <a href="#" class="get-started__btn">Get Started</a>
+            </div>
+            <div class="get-started__right">
+                <img class="get-started__img" src="./images/bg-get-started.webp" alt="">
+            </div>
+        </div>
+        <div class="get-started-statistics">
+            <div class="get-started-statistics__inner">
+                <div class="get-started-statistics__block1">
+                    <div class="icon">
+                        <img src="./images/users.svg" alt="" class="get-started-statistics__img">
+                    </div>
+                    <p class="get-started-statistics__text">
+                        <span>
+                        90+
+                        </span>
+                        <br>
+                        Users
+                    </p>
+                </div>
+                <div class="decor"></div>
+                <div class="get-started-statistics__block2">
+                    <div class="icon">
+                        <img src="./images/location.svg" alt="" class="get-started-statistics__img">
+                    </div>
+                    <p class="get-started-statistics__text">
+                        <span>
+                        30+
+                        </span>
+                        <br>
+                        Locations
+                    </p>
+                </div>
+                <div class="decor"></div>
+                <div class="get-started-statistics__block3">
+                    <div class="icon">
+                        <img src="./images/servers.svg" alt="" class="get-started-statistics__img">
+                    </div>
+                    <p class="get-started-statistics__text">
+                        <span>
+                        50+
+                        </span>
+                        <br>
+                        Servers
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/main.min.js"></script>
 </body>
 
 </html>
