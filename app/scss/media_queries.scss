@@ -1,0 +1,357 @@
+.btn-menu {
+  display: none;
+}
+
+@media (max-width: 1284px) {
+  .get-started__img {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .choose-plan__plan {
+    padding: 40px 46px 30px;
+  }
+  .sponsors {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1000px) {
+  .no-scroll {
+    overflow: hidden;
+  }
+  .btn-menu {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 2;
+    order: 1;
+    margin-right: 20px;
+  }
+  .btn-menu--open .btn-line {
+    background: white;
+  }
+  .btn-line {
+    border-radius: 10px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    position: absolute;
+  }
+  .btn-line:nth-child(1) {
+    top: 0;
+  }
+  .btn-line:nth-child(2) {
+    top: 25px;
+  }
+  .btn-line:nth-child(3) {
+    bottom: 0;
+  }
+  .nav {
+    display: none;
+  }
+  .nav.nav--open {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+  }
+  .nav--open .nav__list {
+    display: inline-block;
+    text-align: center;
+  }
+  .nav--open .nav__item a {
+    color: white;
+    font-size: 48px;
+  }
+  .nav__item + .nav__item {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .get-started__img {
+    display: none;
+  }
+  .get-started__left {
+    width: 80%;
+  }
+  .many-features__right {
+    margin-left: 10px;
+    width: 50%;
+  }
+  .many-features__img {
+    width: 100%;
+  }
+  .many-features__left {
+    width: 50%;
+  }
+  .choose-plan__plan {
+    padding: 20px 26px 15px;
+  }
+  .choose-plan__plans {
+    padding: 0;
+  }
+  .footer__box {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footer__inner {
+    justify-content: space-between;
+  }
+  .footer__box {
+    width: unset;
+    justify-content: unset;
+  }
+  .footer__block2 {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .choose-plan__plans {
+    flex-direction: column;
+    align-items: center;
+  }
+  .choose-plan__plan + .choose-plan__plan {
+    margin-top: 15px;
+  }
+  .location__bottom {
+    padding: 0;
+  }
+  .subscribe-block__inner {
+    padding: 29px 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .get-started-statistics__inner {
+    padding: 12px 30px;
+  }
+  .get-started-statistics__text {
+    font-size: 14px;
+
+    span {
+      font-size: 20px;
+    }
+  }
+  .many-features__left {
+    display: none;
+  }
+  .many-features__right {
+    width: 80%;
+  }
+  .review__item {
+    padding: 15px;
+  }
+  .footer__inner {
+    flex-wrap: wrap;
+  }
+  .footer__block1 {
+    margin-bottom: 10px;
+  }
+  .subscribe-block__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe-block__title, .subscribe-block__text {
+    text-align: center;
+  }
+  .subscribe-block__text {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 690px) {
+  .auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .auth__sign-in {
+    margin-bottom: 5px;
+  }
+  .auth__sign-up {
+    margin-left: 0;
+  }
+  .review__item-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .get-started__inner {
+    margin-bottom: 70px;
+  }
+  .header {
+    margin-bottom: 50px;
+  }
+  .get-started__title {
+    font-size: 37px;
+    padding-top: 0;
+  }
+  .get-started__text {
+    font-size: 12px;
+  }
+  .get-started-statistics__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .decor {
+    border: unset;
+    width: 100%;
+    height: 2px;
+    background: #eeeff2;
+  }
+  .many-features__title {
+    font-size: 26px;
+    margin-top: 0;
+  }
+  .many-features__text {
+    font-size: 12px;
+  }
+  .many-features__item {
+    font-size: 10px;
+  }
+  .many-features {
+    margin-bottom: 70px;
+  }
+  .choose-plan__title {
+    font-size: 25px;
+  }
+  .choose-plan__text {
+    font-size: 12px;
+  }
+  .choose-plan__head {
+    margin-bottom: 30px;
+  }
+  .choose-plan {
+    margin-bottom: 75px;
+  }
+  .location__title {
+    font-size: 26px;
+  }
+  .location__text {
+    font-size: 12px;
+    margin-bottom: 55px;
+  }
+  .location__bottom {
+    margin-bottom: 15px;
+  }
+  .choose-plan__item {
+    font-size: 10px;
+  }
+  .choose-plan__name {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  ul.choose-plan__list {
+    margin-bottom: 25px;
+  }
+  .choose-plan__price {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .choose-plan__price span {
+    font-size: 18px;
+  }
+  .choose-plan__select {
+    font-size: 12px;
+  }
+  .choose-plan__item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .review__item-top {
+    flex-direction: row;
+  }
+  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 80px;
+  }
+  .review__head-title {
+    font-size: 26px;
+  }
+  .review__head-text {
+    font-size: 12px;
+  }
+  .review__name {
+    font-size: 14px;
+  }
+  .review__text {
+    font-size: 10px;
+  }
+  .review__item-bottom {
+    font-size: 12px;
+  }
+  .review__grade-text {
+    font-size: 12px;
+  }
+  .get-started__btn {
+    font-size: 12px;
+  }
+  .footer__inner {
+    padding-bottom: 50px;
+  }
+  .footer__text {
+    font-size: 12px;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+  .footer__text-title {
+    font-size: 14px;
+  }
+  .footer__link {
+    font-size: 12px;
+  }
+  .footer__box {
+    margin-bottom: 10px;
+  }
+  .subscribe-block__title {
+    font-size: 26px;
+    margin-bottom: 5px;
+    line-height: 30px;
+  }
+  .subscribe-block__text {
+    font-size: 12px;
+  }
+  .subscribe-block__btn {
+    font-size: 12px;
+  }
+  .subscribe-block__btn {
+    padding: 9px 32px;
+  }
+  .nav--open .nav__item a {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 425px) {
+  .get-started {
+    margin-bottom: 50px;
+  }
+  .get-started__left {
+    width: 100%;
+  }
+  .header_inner {
+    height: 100%;
+    flex-direction: column;
+  }
+  .btn-menu {
+    cursor: pointer;
+    order: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+}

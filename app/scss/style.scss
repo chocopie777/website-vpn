@@ -254,7 +254,13 @@
 .decor {
   border-left: 2px solid #EEEFF2;
 }
-
+.many-features__img img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
 .many-features__title {
   margin-top: 50px;
   color: #0B132A;
@@ -454,35 +460,35 @@ ul.choose-plan__list {
   text-align: center;
 }
 
-.choose-plan__plan--active {
+.choose-plan__plan:hover {
   border-radius: 10px;
   border: 2px solid #F53838;
   position: relative;
   z-index: 1;
-}
 
-.choose-plan__select--active {
-  background: #F53838;
-  color: #FFF;
-  font-family: Rubik-Bold;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  position: relative;
+  & .choose-plan__select {
+    background: #F53838;
+    color: #FFF;
+    font-family: Rubik-Bold;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
 
-  &::before {
-    z-index: -1;
-    position: absolute;
-    content: '';
-    width: 90%;
-    height: 100%;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
-    border-radius: 60px;
-    background: rgba(245, 56, 56, 0.35);
-    filter: blur(27px);
+    &::before {
+      z-index: -1;
+      position: absolute;
+      content: '';
+      width: 90%;
+      height: 100%;
+      left: 50%;
+      right: 50%;
+      transform: translateX(-50%);
+      border-radius: 60px;
+      background: rgba(245, 56, 56, 0.35);
+      filter: blur(27px);
+    }
   }
 }
 
@@ -523,6 +529,10 @@ ul.choose-plan__list {
 .location__bottom {
   padding: 0 40px;
   margin-bottom: 35px;
+
+  img {
+    width: 100%;
+  }
 }
 
 .sponsors {
@@ -566,7 +576,6 @@ ul.choose-plan__list {
 }
 
 .review__item {
-  max-width: 400px;
   padding: 30px;
   border-radius: 10px;
   border: 2px solid #DDD;
@@ -716,7 +725,11 @@ ul.choose-plan__list {
 }
 
 .subscribe-block {
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
   position: absolute;
+  z-index: 2;
   bottom: -15%;
   width: 100%;
 }
@@ -803,7 +816,7 @@ ul.choose-plan__list {
 
 .footer {
   position: relative;
-  z-index: -2;
+  z-index: 1;
   background: #F8F8F8;
 }
 
