@@ -38,6 +38,9 @@ const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
     anchor.addEventListener("click", function (event) {
+        nav.classList.remove('nav--open');
+        btn.classList.remove('btn-menu--open');
+        body.classList.remove("no-scroll");
         event.preventDefault();
         const blockID = anchor.getAttribute('href');
         document.querySelector('' + blockID).scrollIntoView({
